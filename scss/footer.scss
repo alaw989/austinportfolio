@@ -1,0 +1,28 @@
+@import "spacingUnits";
+@import "mediaQueries";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.footer-wrapper {
+	background-color: #2a3a3f;
+    .container {
+        .footer-container {
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+            .footer-block {
+            	display: flex;
+            	flex-direction: column;
+            	img {
+            		max-width: 50px;
+            		margin: 0 auto;
+            		padding-bottom: $spacingBase;
+            	}
+            	.footerBlock-text {
+            		p {
+            			text-align: center;
+            		}
+            	}
+            }
+        }
+    }
+}

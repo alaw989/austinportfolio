@@ -1,0 +1,168 @@
+@charset "UTF-8";
+/* SPACING UNITS
+========================================================================== */
+/*
+* Try and use only these values to set typography spacing (margins) across site for consistency.
+*
+* $spacingBase is the same as default line height above. This value is then increased/decreased by halves.
+*
+* These values can be used in classes for tweaking spacing and are used in _base/helper-classes.scss
+* styles for one-off use cases where an entire new class is not necessary
+*/
+/*
+ * Headings sizes (in pixels).
+ */
+/*
+ * Ancillary sizes (in pixels).
+ */
+/* ============================================================================================== */
+/* ============================================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.spotLight-wrapper {
+  background-color: #f5f6f8;
+  padding: 100px 0; }
+  .spotLight-wrapper .spotLight-Heading h2 {
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 24px 0;
+    margin: 0 auto; }
+  .spotLight-wrapper .spotLight-Heading h4 {
+    text-align: center;
+    padding: 12px 12px 48px 12px; }
+  .spotLight-wrapper .spotLight-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 48px 0 0 0; }
+    .spotLight-wrapper .spotLight-container .spotLight-text {
+      width: 50%;
+      padding: 0 100px; }
+      .spotLight-wrapper .spotLight-container .spotLight-text h2 {
+        padding: 6px 0 0 0;
+        text-align: left;
+        font-weight: bold; }
+      .spotLight-wrapper .spotLight-container .spotLight-text li {
+        padding: 12px 0 0 0;
+        text-align: left;
+        color: #93a4aa;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        font-size: .75rem;
+        letter-spacing: 1px;
+        color: #b2c6cd;
+        list-style-type: none; }
+        .spotLight-wrapper .spotLight-container .spotLight-text li:before {
+          content: " • ";
+          color: #DE4313; }
+      .spotLight-wrapper .spotLight-container .spotLight-text p {
+        padding: 24px 0 48px 0;
+        text-align: left;
+        color: #93a4aa;
+        line-height: 1.6;
+        min-width: 230px; }
+      .spotLight-wrapper .spotLight-container .spotLight-text .button {
+        background: transparent;
+        border: 2px solid #DE4313;
+        color: rgba(0, 0, 0, 0.55);
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: .8rem;
+        font-weight: 700;
+        color: black;
+        border-radius: 50px;
+        padding: 12px 24px 12px 24px;
+        transition: all .4s; }
+        .spotLight-wrapper .spotLight-container .spotLight-text .button:hover {
+          border: 2px solid black;
+          color: #DE4313;
+          background-color: black;
+          padding: 12px 35px 12px 35px; }
+    .spotLight-wrapper .spotLight-container .spotLight-text.alignRight {
+      order: 2;
+      text-align: left;
+      padding: 0 100px; }
+      .spotLight-wrapper .spotLight-container .spotLight-text.alignRight h2 {
+        text-align: left; }
+      .spotLight-wrapper .spotLight-container .spotLight-text.alignRight li {
+        text-align: left; }
+      .spotLight-wrapper .spotLight-container .spotLight-text.alignRight p {
+        min-width: 230px; }
+  .spotLight-wrapper .spotLight-image {
+    padding: 0 100px 0 0; }
+    .spotLight-wrapper .spotLight-image img {
+      width: 100%; }
+  .spotLight-wrapper .spotLight-image.alignLeft {
+    order: 1;
+    padding: 0 0 0 100px; }
+    .spotLight-wrapper .spotLight-image.alignLeft img {
+      width: 100%; }
+  .spotLight-wrapper hr {
+    border-top: 1px dotted #8c8b8b;
+    width: 75%;
+    border-color: #d6e1e5; }
+  .spotLight-wrapper .testimonial .testimonial-text {
+    text-align: center;
+    color: #2a3a3f;
+    width: 50%;
+    padding: 24px 0;
+    margin: 0 auto; }
+  .spotLight-wrapper .testimonial .testimonial-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0 0 24px 12px; }
+    .spotLight-wrapper .testimonial .testimonial-row img {
+      border-radius: 50%; }
+    .spotLight-wrapper .testimonial .testimonial-row p {
+      align-self: center;
+      padding-left: 12px; }
+
+@media (min-width: 1px) and (max-width: 768px) {
+  .spotLight-wrapper .spotLight-Heading h2 {
+    font-size: 24px; }
+  .spotLight-wrapper .spotLight-Heading h4 {
+    font-size: 16px;
+    padding: 12px 12px 24px 12px; }
+  .spotLight-wrapper .spotLight-container {
+    flex-direction: column;
+    justify-content: center; }
+    .spotLight-wrapper .spotLight-container .spotLight-text {
+      width: 100%;
+      order: 2;
+      text-align: center;
+      padding: 0; }
+      .spotLight-wrapper .spotLight-container .spotLight-text h2 {
+        text-align: center;
+        font-size: 24px; }
+      .spotLight-wrapper .spotLight-container .spotLight-text li {
+        text-align: center; }
+      .spotLight-wrapper .spotLight-container .spotLight-text p {
+        text-align: center;
+        font-size: .9rem;
+        padding: 12px 0 48px 0;
+        margin: 6px 48px; }
+    .spotLight-wrapper .spotLight-container .spotLight-text.alignRight {
+      width: 100%;
+      text-align: center;
+      padding: 0; }
+      .spotLight-wrapper .spotLight-container .spotLight-text.alignRight h2 {
+        text-align: center;
+        font-size: 24px; }
+      .spotLight-wrapper .spotLight-container .spotLight-text.alignRight li {
+        text-align: center; }
+      .spotLight-wrapper .spotLight-container .spotLight-text.alignRight p {
+        text-align: center;
+        font-size: .9rem; }
+    .spotLight-wrapper .spotLight-container .spotLight-image {
+      order: 1;
+      width: 65%;
+      margin: 0 auto;
+      padding: 0; }
+      .spotLight-wrapper .spotLight-container .spotLight-image img {
+        width: 100%; }
+    .spotLight-wrapper .spotLight-container .spotLight-image.alignLeft {
+      padding: 0; }
+      .spotLight-wrapper .spotLight-container .spotLight-image.alignLeft img {
+        width: 100%; } }

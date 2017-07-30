@@ -1,0 +1,36 @@
+/* SPACING UNITS
+========================================================================== */
+/*
+* Try and use only these values to set typography spacing (margins) across site for consistency.
+*
+* $spacingBase is the same as default line height above. This value is then increased/decreased by halves.
+*
+* These values can be used in classes for tweaking spacing and are used in _base/helper-classes.scss
+* styles for one-off use cases where an entire new class is not necessary
+*/
+/*
+ * Headings sizes (in pixels).
+ */
+/*
+ * Ancillary sizes (in pixels).
+ */
+/* ============================================================================================== */
+/* ============================================================================================== */
+.bannerHead {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  /*background-image: linear-gradient( 135deg, #5EFCE8 0%, #736EFE 100%);*/
+  background-image: url(/images/tampa.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%; }
+  .bannerHead .bannerHead-content {
+    background-color: rgba(0, 0, 0, 0.34);
+    color: white;
+    text-align: center;
+    padding: 24px; }
+    .bannerHead .bannerHead-content h1 {
+      padding: 12px 0;
+      font-weight: bold; }

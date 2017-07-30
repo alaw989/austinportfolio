@@ -1,0 +1,34 @@
+/* SPACING UNITS
+========================================================================== */
+/*
+* Try and use only these values to set typography spacing (margins) across site for consistency.
+*
+* $spacingBase is the same as default line height above. This value is then increased/decreased by halves.
+*
+* These values can be used in classes for tweaking spacing and are used in _base/helper-classes.scss
+* styles for one-off use cases where an entire new class is not necessary
+*/
+/*
+ * Headings sizes (in pixels).
+ */
+/*
+ * Ancillary sizes (in pixels).
+ */
+/* ============================================================================================== */
+/* ============================================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.footer-wrapper {
+  background-color: #2a3a3f; }
+  .footer-wrapper .container .footer-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0; }
+    .footer-wrapper .container .footer-container .footer-block {
+      display: flex;
+      flex-direction: column; }
+      .footer-wrapper .container .footer-container .footer-block img {
+        max-width: 50px;
+        margin: 0 auto;
+        padding-bottom: 24px; }
+      .footer-wrapper .container .footer-container .footer-block .footerBlock-text p {
+        text-align: center; }
