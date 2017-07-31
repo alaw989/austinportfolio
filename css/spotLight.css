@@ -60,6 +60,8 @@
         color: #93a4aa;
         line-height: 1.6;
         min-width: 230px; }
+      .spotLight-wrapper .spotLight-container .spotLight-text span {
+        font-style: italic; }
       .spotLight-wrapper .spotLight-container .spotLight-text .button {
         background: transparent;
         border: 2px solid #DE4313;

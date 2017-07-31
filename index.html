@@ -29,16 +29,16 @@
             <div class="container">
                 <div class="headerMain">
                     <div class="logo">
-                        <img src="/austinportfolio/images/logoorangelight.png" id="logo"></a>
+                        <img src="/images/logoorangelight.png" id="logo"></a>
                     </div>
                     <ul class="mainNav">
-                        <li class="headerli">Expertise</li>
-                        <li class="headerli">Tools</li>
-                        <li class="headerli">My Work</li>
-                        <li class="headerli">Contact</li>
+                        <li class="headerli" id="expertise">Expertise</li>
+                        <li class="headerli" id="tools">Tools</li>
+                        <li class="headerli" id="work">My Work</li>
+                        <li class="headerli" id="contact">Contact</li>
                     </ul>
                     <div class="hamburger" onclick="openNav()">
-                        <img src="/austinportfolio/images/hamburgerwhite.png">
+                        <img src="/images/hamburgerwhite.png">
                     </div>
                 </div>
             </div>
@@ -53,12 +53,62 @@
 
 <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/portfolio.html">Expertise</a>
-    <a href="/careers.html">Tools</a>
-    <a href="/services.html">My Work</a>
-    <a href="/personalprojects.html">Personal Projects</a>
-    <a href="/contactus.html">Contact</a>
+    <li class="expertise" onclick="closeNav()">Expertise</li>
+    <li class="tools" onclick="closeNav()">Tools</li>
+    <li class="work" onclick="closeNav()">My Work</li>
+    <li class="contact" onclick="closeNav()">Contact</li>
 </div>
+
+<script>
+$("#expertise").click(function() {
+    $('html,body').animate({
+            scrollTop: $(".featureBlock-wrapper").offset().top
+        },
+        'slow');
+});
+$("#tools").click(function() {
+    $('html,body').animate({
+            scrollTop: $(".featureBlock-darker").offset().top
+        },
+        'slow');
+});
+$("#work").click(function() {
+    $('html,body').animate({
+            scrollTop: $(".spotLight-wrapper").offset().top
+        },
+        'slow');
+});
+$("#contact").click(function() {
+    $('html,body').animate({
+            scrollTop: $(".contact-wrapper").offset().top
+        },
+        'slow');
+});
+$(".expertise").click(function() {
+    $('html,body').animate({
+            scrollTop: $(".featureBlock-wrapper").offset().top
+        },
+        'slow');
+});
+$(".tools").click(function() {
+    $('html,body').animate({
+            scrollTop: $(".featureBlock-darker").offset().top
+        },
+        'slow');
+});
+$(".work").click(function() {
+    $('html,body').animate({
+            scrollTop: $(".spotLight-wrapper").offset().top
+        },
+        'slow');
+});
+$(".contact").click(function() {
+    $('html,body').animate({
+            scrollTop: $(".contact-wrapper").offset().top
+        },
+        'slow');
+});
+</script>
 
 
 
@@ -135,19 +185,19 @@
             <div class="spotLight-text">
                 <h2>VP & Associates</h2>
                 <li>UX/UI REDESIGN</li>
-                <p>VP & Associates is an Engineering Company based out of Tampa, Florida. They provide a full range of stuctural engineering, steel detailing services and inspection services.</p>
-                <a href="#" class="button">VISIT WEBSITE</a>
+                <p>VP & Associates is an Engineering Company based out of Tampa, Florida. They provide a full range of stuctural engineering, steel detailing services and inspection services. <span>Still in progress</span></p>
+                <a target="_blank" href="https://alaw989.github.io/" class="button">VISIT WEBSITE</a>
             </div>
             <figure class="spotLight-image">
-                <img src="/austinportfolio/images/spotlight-image1.jpg">
+                <img src="/images/spotlight-image1.jpg">
             </figure>
         </div>
          <hr>
         <div class="testimonial">
-            <h4 class="testimonial-text">“Austin helped refresh our brand with a unique, modern responsive website. He does great work.”
+            <h4 class="testimonial-text">“Austin is helping to refresh our brand with a unique, modern responsive website. He does great work.”
             </h4>
             <div class="testimonial-row">
-                <img src="http://via.placeholder.com/50x50">
+                <img src="/images/asianman.png">
                 <p> Vuong Phan, Owner, V&P Associates, Inc</p>
             </div>
         </div>
@@ -160,7 +210,7 @@
                 <a target="_blank" href="http://designdemo-education.design.iapps.com/2-cmsPro/homepage.shtml" class="button">VISIT WEBSITE</a>
             </div>
             <figure class="spotLight-image alignLeft">
-                <img src="/austinportfolio/images/spotlight-image1.jpg">
+                <img src="/images/spotlight-image2.jpg">
             </figure>
         </div>
     </div>
@@ -213,7 +263,7 @@
                 </div>
             </div>
             </a>
-            <a target="_blank" href="https://www.github.com">
+            <a target="_blank" href="https://github.com/alaw989">
             <div class="contact-block">
                 <i class="fa fa-github-alt fa-5x" aria-hidden="true"></i>
                 <i class="fa fa-github-alt fa-5x" aria-hidden="true"></i>
@@ -251,10 +301,10 @@
     <div class="container">
         <div class="footer-container">
             <div class="footer-block">
-                <img src="/austinportfolio/images/logoorangelight.png"></a>
+                <img src="/images/logoorangelight.png"></a>
                 <div class="footerBlock-text">
                     <p>
-                        i made dis © 2017
+                        Austin Law © 2017
                     </p>
                 </div>
             </div>
