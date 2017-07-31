@@ -29,6 +29,8 @@
   .spotLight-wrapper .spotLight-Heading h4 {
     text-align: center;
     padding: 12px 12px 48px 12px; }
+  .spotLight-wrapper .spotLight-Heading a {
+    color: #1bb4e5; }
   .spotLight-wrapper .spotLight-container {
     display: flex;
     flex-direction: row;
