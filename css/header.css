@@ -75,9 +75,11 @@
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s .sidenav li; }
-    .sidenav li :hover {
-      color: #f1f1f1; }
+    transition: 0.3s;
+    cursor: pointer; }
+    .sidenav li:hover {
+      color: #f1f1f1;
+      cursor: pointer; }
 
 @media (min-width: 1px) and (max-width: 768px) {
   .headerWrapper .headerMain .logo img {
