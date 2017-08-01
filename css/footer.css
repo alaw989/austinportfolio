@@ -19,15 +19,10 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 .footer-wrapper {
   background-color: #2a3a3f; }
-  .footer-wrapper .container .footer-container {
-    display: flex;
-    justify-content: center;
-    padding: 30px 0 0 0;
-    flex-direction: column; }
-    .footer-wrapper .container .footer-container .footer-block {
-      margin: 0 auto; }
-      .footer-wrapper .container .footer-container .footer-block img {
-        padding-bottom: 24px; }
+  .footer-wrapper .container img {
+    display: block;
+    margin: auto;
+    padding: 24px; }
   .footer-wrapper .container p {
     text-align: center;
     padding: 0 0 30px 0; }
