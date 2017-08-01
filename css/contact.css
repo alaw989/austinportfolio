@@ -1,0 +1,64 @@
+/* SPACING UNITS
+========================================================================== */
+/*
+* Try and use only these values to set typography spacing (margins) across site for consistency.
+*
+* $spacingBase is the same as default line height above. This value is then increased/decreased by halves.
+*
+* These values can be used in classes for tweaking spacing and are used in _base/helper-classes.scss
+* styles for one-off use cases where an entire new class is not necessary
+*/
+/*
+ * Headings sizes (in pixels).
+ */
+/*
+ * Ancillary sizes (in pixels).
+ */
+/* ============================================================================================== */
+/* ============================================================================================== */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+.contact-wrapper {
+  background-color: #f8a000; }
+  .contact-wrapper .container .contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 175px 0;
+    margin: 0 100px; }
+    @media (min-width: 1px) and (max-width: 768px) {
+      .contact-wrapper .container .contact-container {
+        flex-direction: column;
+        justify-content: center; } }
+    .contact-wrapper .container .contact-container a {
+      text-decoration: none;
+      padding: 0 24px;
+      text-align: center;
+      color: #2a3a3f; }
+      .contact-wrapper .container .contact-container a .contact-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 12px;
+        width: 100%;
+        position: relative; }
+        @media (min-width: 1px) and (max-width: 768px) {
+          .contact-wrapper .container .contact-container a .contact-block {
+            margin: 24px 0; } }
+        .contact-wrapper .container .contact-container a .contact-block i:nth-child(2) {
+          position: absolute;
+          top: 0;
+          right: 0;
+          left: 0;
+          transition: all .3s; }
+          .contact-wrapper .container .contact-container a .contact-block i:nth-child(2):hover {
+            font-size: 200px;
+            opacity: 0; }
+        .contact-wrapper .container .contact-container a .contact-block .contactBlock-text {
+          text-align: center; }
+          .contact-wrapper .container .contact-container a .contact-block .contactBlock-text h2 {
+            padding: 12px 0;
+            color: #2a3a3f;
+            font-weight: bold;
+            transition: all .1s; }
+          .contact-wrapper .container .contact-container a .contact-block .contactBlock-text p {
+            color: #2a3a3f; }

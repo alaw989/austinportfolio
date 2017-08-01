@@ -1,0 +1,61 @@
+@import "spacingUnits";
+@import "mediaQueries";
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+.project-wrapper {
+    padding: 100px 0;
+    .container {
+        .project-text {}
+        .project-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            padding: 0 $spacingBase;
+            @include phone {
+                flex-direction: column;
+            }
+            a {
+                font-size: 100px;
+                text-align: center;
+                overflow: none;
+                color: #2a3a3f;
+                text-decoration: none;
+                transition: all .3s;
+                &:hover:nth-child(1) {
+                    color: #6441A4 ;
+                }
+                &:hover:nth-child(2) {
+                    color: orange;
+                }
+                &:hover:nth-child(3) {
+                    color: black;
+                }
+                .project-block {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .projectBlock-text {
+                        padding: $spacingSm 0 0 0;
+                        line-height: 1.8;
+                        color: #93a4aa;
+                        text-align: center;
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            max-width: 400px;
+                            padding: 0 $spacingLg;
+                            width: 100%;
+                            @include phone {
+                                padding: $spacingBase $spacingSm $spacingLg $spacingSm;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
